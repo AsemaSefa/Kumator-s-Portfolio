@@ -2,19 +2,19 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  ;
 }
 body {
-  font-family: Arial, sans-serif;
-  background-color: #0f4ebafa;
-  color: #f4f4f4;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #f4f4f4;
+  color: #032c72;
   line-height: 1.6;
 
   min-height: 200vh;
 }
 .hero {
-  background-color: #101a8a4c;
+  background-color: #09105f4c;
   background-image: url(./images/background2.jpg);
+  color: whitesmoke;
   background-blend-mode: multiply;
   background-position: center;
   background-size: cover;
@@ -26,14 +26,129 @@ body {
   text-transform: uppercase;
   text-shadow: 0.5px 1px 3px #140667;
 }
-.hero h2 {
+
+h2 {
   font-weight: bold;
   font-size: 2.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  /* text-wrap: nowrap; */
 }
-header a,li {
+header a,
+li {
   font-weight: bold;
   text-transform: uppercase;
 }
-header li:hover{
-  border:  1px solid white;
+header li:hover {
+  border: 1px solid whitesmoke;
+}
+
+.about {
+  margin-top: 4rem;
+  min-height: 100vh;
+}
+
+.sub-sec {
+  /* background-color: rgb(177, 18, 18); */
+  text-align: justify;
+  padding: 1rem;
+  min-height: 80%;
+}
+.img-container {
+  height: auto;
+  width: auto;
+  border-radius: 1rem;
+}
+.sub-sec img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.about-container {
+  align-items: center;
+  /* display: flex; */
+  justify-content: space-evenly;
+  height: 80vh;
+  padding: 2rem;
+}
+.contact {
+  min-height: 100vh;
+}
+form {
+  border: 1px solid #bcb4b4;
+  min-height: 200px;
+  max-width: 60%;
+  min-width: fit-content;
+  margin: auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+input,
+textarea {
+  border: 1px solid #bcb4b4;
+  border-radius: 3px;
+  display: block;
+  margin: 8px 1px;
+  min-width: 95%;
+  padding: 5px 7px;
+}
+textarea {
+  max-width: fit-content;
+}
+button {
+  margin-top: 4px;
+  padding: 0.5rem;
+  color: whitesmoke;
+  background-color: #032c72;
+  border: none;
+  border-radius: 3px;
+}
+
+form {
+  background-color: #032c72;
+  background-image: linear-gradient(
+    to right,
+    rgb(12, 31, 108),
+    rgb(55, 85, 204)
+  );
+
+  color: white;
+}
+
+form button {
+  background-color: rgb(55, 85, 204);
+  /* background-image: linear-gradient(to right, rgb(55, 85, 204), white); */
+}
+
+.serve {
+  height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+  background-color: white;
+  color: #032c72;
+}
+
+.services {
+  background-color: #032c72;
+}
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 1rem;
+  color: white;
+  width: 100%;
+  font-size: inherit;
+  background-color: #032c72;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer > div {
+  justify-content: center;
+}
+.footer a {
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: whitesmoke;
+}
+.footer ul {
+  list-style: none;
 }

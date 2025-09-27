@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>ASEMA KUMATOR | PORTFOLIO</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
+    
   </head>
   <body>
     <header>
@@ -44,10 +45,10 @@
                 >
               </li>
               <li class="nav-item font-weight-bold">
-                <a class="nav-link text-white" href="#">About</a>
+                <a class="nav-link text-white" href="#about">About</a>
               </li>
               <li class="nav-item font-weight-bold">
-                <a class="nav-link text-white" href="#">Contact</a>
+                <a class="nav-link text-white" href="#contact">Contact</a>
               </li>
             </ul>
             <!-- <form class="d-flex" role="search">
@@ -68,6 +69,7 @@
     <main>
       <section
         class="hero row d-flex justify-content-center align-items-center"
+        id="home"
       >
         <div>
           <h2>
@@ -80,8 +82,152 @@
           </p>
         </div>
       </section>
+      <section class="about" id="about">
+        <h2 class="font-weigth-bold">About Me</h2>
+        <div class="container-fluid about-container row">
+          <div class="sub-sec col-md-6 col-lg-6 col-sm-12">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus
+            recusandae optio id ea? Nesciunt, non! Accusantium quibusdam numquam
+            exercitationem autem ex quod fuga. Praesentium architecto dolore
+            libero nostrum sunt numquam?
+          </div>
+          <div class="sub-sec col-md-6 col-lg-6 col-sm-12">
+            <div class="imd-container">
+              <img src="/images/background.jpg" alt="a pc setup" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section or services-->
+      <section class="serve">
+        <div class="services"></div>
+        <div class="services"></div>
+        <div class="services"></div>
+        <div class="services"></div>
+      </section>
+
+      <!-- section form for contact-->
+      <section class="contact mt-3 pb-5" id="contact">
+        <h2 class="my-4">contact me</h2>
+        <form action="">
+          <label for="name">Name:</label>
+          <input type="text" id="name" />
+          <label for="email">Email:</label>
+          <input type="email" id="email" />
+          <label for="phone">phone:</label>
+          <input type="number" id="phone" />
+          <label for="message">Message:</label>
+          <textarea name="message" id="message"></textarea>
+          <button id="submit">Submit</button>
+        </form>
+      </section>
     </main>
-    <footer></footer>
+
+    <footer>
+      <!--
+      <p>lorem5</p>
+      <p>instagram: </p>
+      <p>facebook: </p>
+      <p>linkedin: </p>
+      <p>X(formally Twitter): </p> -->
+      <section
+        id="footer"
+        class="footer container-fluid justify-content-center"
+      >
+        <div class="row justify-content-evenly">
+          <div
+            class="col-lg-3 col-md-6 col-sm-6 col-xs-6 footer-sections footer-info"
+          >
+            <!-- <ul>
+          <li> -->
+            <a href="">
+KUMATOR
+            </a>
+            <!-- </li>
+         
+         
+          
+        </ul> -->
+          </div>
+          <div
+            class="col-lg-3 col-md-6 col-sm-6 col-xs-6 footer-sections footer-links"
+          >
+            <ul>
+              <li>
+                <a href="#"><i class="fas fa-home"></i> Home</a>
+              </li>
+              <li>
+                <a href="#about"><i class="fas fa-info-circle"></i> About</a>
+              </li>
+              <li>
+                <a href="#portfolio"
+                  ><i class="fas fa-briefcase"></i> portfolio</a
+                >
+              </li>
+              <li>
+                <a href="#services"
+                  ><i class="fas fa-concierge-bell"></i> service</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div
+            class="col-lg-3 col-md-6 col-sm-6 col-xs-6 footer-sections footer-socials"
+          >
+            <ul>
+              <li>
+                <a href="https://x.com/AsemaSefa" target="_blank"
+                  ><i class="fab fa-x-twitter"> </i> X</a
+                >
+              </li>
+              <li>
+                <a href="https://facebook.com/asema.sefa.9" target="_blank"
+                  ><i class="fab fa-facebook-f"> </i> facebook</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/asema-sefa-804bb8307"
+                  target="_blank"
+                  ><i class="fab fa-linkedin"> </i> linkedin</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/iamsepha/?__pwa=1#"
+                  target="_blank"
+                  ><i class="fab fa-instagram"> </i> instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div
+            class="col-lg-3 col-md-6 col-sm-6 col-xs-6 footer-sections footer-contacts"
+          >
+            <ul>
+              <li>
+                <a href="https://github.com/AsemaSefa" target="_blank"
+                  ><i class="fab fa-github"></i> github</a
+                >
+              </li>
+              <li>
+                <a href="mailto:sefaasema2@gmail.com"
+                  ><i class="fas fa-envelope"></i> email</a
+                >
+              </li>
+              <li>
+                <a href="tel:+2349046246201"
+                  ><i class="fas fa-phone-alt"></i> phone</a
+                >
+              </li>
+            </ul>
+          </div>
+          <p class="text-center">&copy;2024 Asema Kumator</p>
+        </div>
+      </section>
+    </footer>
+    <script src="https://kit.fontawesome.com/59989756f3.js" crossorigin="anonymous"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
